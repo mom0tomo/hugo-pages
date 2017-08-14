@@ -1,0 +1,48 @@
+box: golang
+pre:
+  steps:
+    - script:
+        name: output message
+        code: |
+          echo 'ʕ ◔ϖ◔ʔ < build&deployを開始するぞい'
+
+build:
+  steps:
+    - install-packages:
+        packages: git
+    - script:
+        name: initialize git submodules
+        code: |
+          git submodule update --init --recursive
+    - arjen/hugo-build:
+        version: "0.20"
+        flags: -v --buildDrafts=false
+    - script:
+        name: copy wercker.yml
+        code: |
+          cp wercker.yml public
+  after-steps:
+    - slack-notifier:
+      channel: $SLACK_CHANNEL
+      url: $SLACK_URL
+      username: wercker_bot
+
+deploy:
+  steps:
+    - install-packages:
+        packages: git ssh-client curl
+    - leipert/git-push:
+        gh_oauth: $GIT_TOKEN
+        repo: mom0tomo/mom0tomo.github.io
+        branch: master
+        basedir: public
+        gh_pages_domain: mom0tomo.github.io
+  after-steps:
+    - script:
+      name: delete cloudflare cache
+      code: |
+        sh ./scripts/delete_cache_all.sh ${CF_ZONE_ID} ${CF_EMAIL} ${CF_KEY}
+    - slack-notifier:
+      channel: $SLACK_CHANNEL
+      url: $SLACK_URL
+      username: wercker_bot
