@@ -46,3 +46,4 @@ deploy:
       channel: $SLACK_CHANNEL
       url: $SLACK_URL
       username: wercker_bot
+      branch: master
