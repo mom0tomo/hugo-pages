@@ -22,10 +22,13 @@ build:
         code: |
           cp wercker.yml public
   after-steps:
-    - slack-notifier:
-        channel: alert-hugo-pages
-        url: $SLACK_URL
-        username: wercker_bot
+    - theollyr/slack-notifier@1.3.1:
+         url: $SLACK_URL
+         channel: channel-id
+         username: wercker_bot
+         branch: master
+         passed_msg: "ʕ ◔ϖ◔ʔ < success to build!!"
+         failed_msg: "ʕ ´ϖ` ʔ < faild to build..."
 
 deploy:
   steps:
@@ -40,8 +43,10 @@ deploy:
   after-steps:
     - script:
           name: delete cloudflare cache
-    - slack-notifier:
-        channel: alert-hugo-pages
-        url: $SLACK_URL
-        username: wercker_bot
-        branch: master
+    - theollyr/slack-notifier@1.3.1:
+         url: $SLACK_URL
+         channel: channel-id
+         username: wercker_bot
+         branch: master
+         passed_msg: "ʕ ◔ϖ◔ʔ < success to deploy!!"
+         failed_msg: "ʕ ´ϖ` ʔ < faild to deploy..."
