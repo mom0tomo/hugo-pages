@@ -1,4 +1,4 @@
-box: golang
+box: debian
 pre:
   steps:
     - script:
