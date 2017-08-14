@@ -23,7 +23,7 @@ build:
           cp wercker.yml public
   after-steps:
     - slack-notifier:
-        url: $SLACK_URL
+        url: $SLACK_WEBHOOK_URL
         channel: alert-hugo-pages
         username: wercker_bot
         branch: master
@@ -41,7 +41,7 @@ deploy:
     - script:
           name: delete cloudflare cache
     - slack-notifier:
-        url: $SLACK_URL
+        url: $SLACK_WEBHOOK_URL
         channel: alert-hugo-pages
         username: wercker_bot
         branch: master
