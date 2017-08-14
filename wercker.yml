@@ -23,8 +23,8 @@ build:
           cp wercker.yml public
   after-steps:
     - slack-notifier:
-        channel: $SLACK_CHANNEL
-        url: alert-hugo-pages
+        channel: alert-hugo-pages
+        url: $SLACK_URL
         username: wercker_bot
 
 deploy:
@@ -39,9 +39,9 @@ deploy:
         gh_pages_domain: mom0tomo.github.io
   after-steps:
     - script:
-        name: delete cloudflare cache
+          name: delete cloudflare cache
     - slack-notifier:
-        channel: $SLACK_CHANNEL
-        url: alert-hugo-pages
+        channel: alert-hugo-pages
+        url: $SLACK_URL
         username: wercker_bot
         branch: master
