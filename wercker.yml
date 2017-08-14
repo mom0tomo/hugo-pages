@@ -24,7 +24,7 @@ build:
   after-steps:
     - theollyr/slack-notifier@1.3.1:
          url: $SLACK_URL
-         channel: channel-id
+         channel: alert-hugo-pages
          username: wercker_bot
          branch: master
          passed_msg: "ʕ ◔ϖ◔ʔ < success to build!!"
@@ -45,7 +45,7 @@ deploy:
           name: delete cloudflare cache
     - theollyr/slack-notifier@1.3.1:
          url: $SLACK_URL
-         channel: channel-id
+         channel: alert-hugo-pages
          username: wercker_bot
          branch: master
          passed_msg: "ʕ ◔ϖ◔ʔ < success to deploy!!"
