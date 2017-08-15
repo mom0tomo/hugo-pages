@@ -15,13 +15,12 @@ hasCJKLanguage = true
 	enableGoogleAnalytics = true
 
 	# Choose a font for the social icons in the footer. Either "mono-social" or "font-awesome"
-	iconFont = "font-awesome"
-  # The social icons can be styled differently if you use mono as font - circle, rounded, or empty
-  socialIconStyle = ""
-
+	iconFont = "mono-social"
+	# The social icons can be styled differently if you use mono as font - circle, rounded, or empty
+	socialIconStyle = "circle"
 
 # Add additional social link entries underneath
 [social]
 	facebook-square = "https://www.facebook.com/mom0tomo/"
-  twitter-square = "https://twitter.com/mom0tomo"
-  github-square = "https://github.com/mom0tomo"
+	twitter-square = "https://twitter.com/mom0tomo"
+	github-square = "https://github.com/mom0tomo"
