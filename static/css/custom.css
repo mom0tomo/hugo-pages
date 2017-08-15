@@ -1,0 +1,11 @@
+a.symbol {
+    font-size: 1.8rem;
+}
+
+.post h2.headline .tags {
+    text-transform: none;
+}
+
+.page-tags .tags {
+    text-transform: none;
+}
