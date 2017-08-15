@@ -1,7 +1,7 @@
 ---
 title: "{{ replace .TranslationBaseName "-" " " | title }}"
 date: {{ .Date }}
-draft: false
+draft: true
 slug = ""
 tags = ["go", "golang"]
 ---
