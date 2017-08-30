@@ -10,9 +10,9 @@ buildDrafts = false
 buildFuture = true
 
 [social]
-	facebook-square = "https://www.facebook.com/mom0tomo"
-	twitter-square = "https://twitter.com/mom0tomo"
-	github-square = "https://github.com/mom0tomo"
+	facebook-official = "https://www.facebook.com/mom0tomo"
+	twitter = "https://twitter.com/mom0tomo"
+	github = "https://github.com/mom0tomo"
 
 [params]
 	name = "mom0tomo"
