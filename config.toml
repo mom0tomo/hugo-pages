@@ -10,7 +10,7 @@ buildDrafts = false
 buildFuture = true
 
 [social]
-	facebook-official = "https://www.facebook.com/mom0tomo"
+	facebook = "https://www.facebook.com/mom0tomo"
 	twitter = "https://twitter.com/mom0tomo"
 	github = "https://github.com/mom0tomo"
 
@@ -50,8 +50,8 @@ buildFuture = true
 	subtitle404 = ""
 
 	# "mono-social" or "font-awesome"
-	iconFont = "font-awesome"
+	iconFont = "mono-social"
 
 	# The social icons can be styled differently if you use mono-social as font
 	# circle, rounded, or empty
-	socialIconStyle = ""
+	socialIconStyle = "circle"
