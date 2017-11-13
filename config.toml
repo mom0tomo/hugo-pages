@@ -16,8 +16,8 @@ buildFuture = true
 
 [params]
 	name = "mom0tomo"
-	description = ""
-	bio = ""
+	description = "mom0tomo's Blog"
+	bio = "Server-side Developer - Gopher"
 	twitter = "mom0tomo"
 
 	# Custom static files
