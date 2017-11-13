@@ -10,3 +10,18 @@ a.symbol {
 .page-tags .tags {
     text-transform: none;
 }
+
+#post-list h2 {
+	font-size: 0.9rem;
+}
+
+#post-list .read-more a {
+	font-size: 0.8rem;
+	text-align: right;
+	color: #999;
+	margin: -0.3rem 0 1.2rem 0;
+}
+
+#post-list .read-more a:hover {
+    color: #5694f1;
+}
