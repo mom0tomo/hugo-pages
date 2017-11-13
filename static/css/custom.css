@@ -25,3 +25,9 @@ a.symbol {
 #post-list .read-more a:hover {
     color: #5694f1;
 }
+
+.pocket-btn {
+	display: inline-block;
+	height: 32px;
+	vertical-align: middle;
+}
