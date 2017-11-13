@@ -3,7 +3,7 @@ title: "About"
 date: 2017-11-13T15:04:30+09:00
 draft: false
 ---
-Love Go, Trip, Beer, Programming!
+ʕ ◔ϖ◔ʔ I Love Go, Trip, Beer, Programming!
 
 <br>
 
