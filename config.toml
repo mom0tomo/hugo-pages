@@ -42,8 +42,8 @@ buildFuture = true
 
 	# Sharing options and author information in posts
 	aboutAuthor = ""
-	tweet = "hogehoge"
-	share = "fugafuga"
+	tweet = ""
+	share = ""
 
 	# 404 page
 	title404 = ""
