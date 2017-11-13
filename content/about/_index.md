@@ -3,7 +3,7 @@ title: "About"
 date: 2017-11-13T15:04:30+09:00
 draft: false
 ---
-Server-side Developer. Love Go, Trip, Beer, Programming!
+Love Go, Trip, Beer, Programming!
 
 <br>
 
