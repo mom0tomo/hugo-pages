@@ -4,8 +4,9 @@ date: 2017-11-13T15:04:30+09:00
 draft: false
 ---
 I Love Go, Travel, Beer, Programming!<br>
-→ [Travel Diary](http://mom0tomo.hatenablog.com/)<br>
+
 ***
+
 ### Contact infomation
 <br>[@mom0tomo](https://twitter.com/mom0tomo/)
 <br>momo76w@gmail.com 
