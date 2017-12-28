@@ -5,8 +5,12 @@ a.symbol {
 
 .post h2.headline .tags {
     text-transform: none;
+    margin-top: 10px;
 }
 
+.post h2.headline .tags > a {
+    text-decoration: underline;
+}
 .page-tags .tags {
     text-transform: none;
 }
