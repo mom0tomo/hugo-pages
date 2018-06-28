@@ -6,7 +6,8 @@
 	<a href='{{ .Site.BaseURL }}post'>{{ with .Site.Params.archive }}{{ . }}{{ else }}Archives{{ end }}</a>
 	<a href='{{ .Site.BaseURL }}tags'>{{ with .Site.Params.tags }}{{ . }}{{ else }}Tags{{ end }}</a>
 	<a href='{{ .Site.BaseURL }}about'>{{ with .Site.Params.about }}{{ . }}{{ else }}About{{ end }}</a>
-	<a href='https://wikihub.io/@mom0tomo'>{{ with .Site.Params.about }}{{ . }}{{ else }}日報{{ end }}</a>
+	<a href='https://mom0tomo.hateblo.jp/'>技術ブログ</a>
+	<a href='https://wikihub.io/@mom0tomo'>日記</a>
 
 	{{ range $key, $val := .Site.Params.Links }}
 		<a href="{{ $val }}">{{ $key }}</a>
