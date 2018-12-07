@@ -8,6 +8,7 @@ googleAnalytics = "UA-104531981-1"
 hasCJKLanguage = true
 buildDrafts = false
 buildFuture = true
+enableRSS = true
 
 [social]
 	facebook = "https://www.facebook.com/mom0tomo"
