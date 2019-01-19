@@ -39,3 +39,16 @@ a.symbol {
 #toc {
   font-size: 14px;
 }
+
+.related-posts {
+  margin: 50px 0;
+}
+.related-posts > h4 {
+  color: #666;
+}
+
+ul > li {
+  color: #999;
+  line-height: 1.7;
+}
+}
