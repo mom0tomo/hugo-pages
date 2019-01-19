@@ -9,6 +9,7 @@ hasCJKLanguage = true
 buildDrafts = false
 buildFuture = true
 enableRSS = true
+enableTwitterCard = true
 
 [social]
 	facebook = "https://www.facebook.com/mom0tomo"
@@ -20,6 +21,8 @@ enableRSS = true
 	description = "mom0tomo's Blog"
 	bio = "Server-side Developer - Gopher"
 	twitter = "mom0tomo"
+	images = ["avatar.png"]
+	title = "mom0tomo"
 
 	# Custom static files
 	customCSS = ["css/custom.css"]
@@ -59,3 +62,6 @@ enableRSS = true
 
 [blackfriday]
 	hrefTargetBlank = true
+
+[taxonomies]
+	series = "series"
