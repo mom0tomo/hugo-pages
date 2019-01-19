@@ -4,7 +4,7 @@ date: {{ .Date }}
 draft: false
 tags: ["Go","Ruby", "career", "event", "English", "Rails", "JS", "React"]
 series: [""]
-images: ["avatar.png"]
+images: ["images/articles/avatar.png"]
 description: ""
 ---
 

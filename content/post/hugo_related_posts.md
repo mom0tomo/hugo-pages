@@ -4,7 +4,7 @@ date: 2019-01-19T20:18:22+09:00
 draft: true
 tags: ["Hugo"]
 series: [""]
-images: ["avatar.png"]
+images: ["images/avatar.png"]
 description: "HugoでRelated Content(関連記事)を表示する方法です。v0.27から公式にサポートされており、コードのサンプルもあるため簡単に設定できます。"
 ---
 
