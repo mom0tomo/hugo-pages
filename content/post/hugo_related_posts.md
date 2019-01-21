@@ -1,6 +1,6 @@
 ---
 title: "HugoでRelated Content(関連記事)を表示する"
-date: 2019-01-19T20:18:22+09:00
+date: 2019-01-21T20:18:22+09:00
 draft: false
 tags: ["Hugo"]
 series: [""]
