@@ -16,6 +16,9 @@ description: "HugoでRelated Content(関連記事)を表示する方法です。
 
 ここに書いてある通りに設定すれば、簡単に関連記事が表示できます。
 
+<br>
+こんな感じ↓
+![related_content](/images/articles/related_content.png)
 ***
 
 ## Hugoで関連記事を表示する方法
