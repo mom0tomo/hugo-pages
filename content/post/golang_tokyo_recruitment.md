@@ -76,7 +76,7 @@ tenntennさんの元同僚で、なんとtenntennさんのつくった採用課�
 
 ***
 
-## LT2 PHPエンジニアがGoを書き始めて楽しくなってきた話
+## LT2 [PHPエンジニアが転職してGoを書き始めたら楽しくなってきた話](https://speakerdeck.com/spre55/phpensiniakazhuan-zhi-sitegowoshu-kishi-metarale-sikunatutekitahua)
 
 Cloud Aceの@spre55さん。
 
