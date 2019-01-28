@@ -88,7 +88,7 @@ GAEはお手軽でいいですよね！
 
 ***
 
-## LT3 docuiのお話
+## LT3 (DockerのTUIツールを作った話)[https://docs.google.com/presentation/d/1ty9MbOGT8HThYVC1DVZtmhKS5MyCNGkDdkCTs6vpqzk/]
 
 @gorilla0513さん。
 
