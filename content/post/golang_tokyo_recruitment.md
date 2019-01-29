@@ -51,7 +51,7 @@ Gopherに限らず、一般的なエンジニアの採用に役に立つ情報�
 
 提出前のセルフレビューで使える補助ツール(go fmt, go vet, golint, gometalinter, golangci-lint…)や、[コードレビューコメントの日本語訳](https://qiita.com/knsh14/items/8b73b31822c109d4c497)（Goの模範的なコードの書き方集）、[Effective Go](https://golang.org/doc/effective_go.html)(Goコードを明快に書くためのTips)などについて紹介いただきました。
 
-tenntennさんいわく、 コードレビューでは **lsしたときに受けた印象が変わることはほとんどない** そうです。
+tenntennさんいわく、 コードレビューでは **「lsしたときに受けた印象が変わることはほとんどない」** (ファイル構成で悪い印象を受けると、それがコード読んで良い印象に変わる事はほぼ無い) そうです。
 
 至言ですね。
 
