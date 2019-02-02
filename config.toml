@@ -10,6 +10,7 @@ buildDrafts = false
 buildFuture = true
 enableRSS = true
 enableTwitterCard = true
+paginate = 104
 
 [social]
 	facebook = "https://www.facebook.com/mom0tomo"
