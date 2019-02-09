@@ -2,53 +2,42 @@ a.symbol {
   font-size: 1.6rem;
   margin-right: 0.5rem;
 }
-
 .post h2.headline .tags {
   text-transform: none;
   margin-top: 10px;
 }
-
 .post h2.headline .tags > a {
   text-decoration: underline;
 }
 .page-tags .tags {
   text-transform: none;
 }
-
 #post-list h2 {
   font-size: 0.9rem;
 }
-
 #post-list .read-more a {
   font-size: 0.8rem;
   text-align: right;
   color: #999;
   margin: -0.3rem 0 1.2rem 0;
 }
-
 #post-list .read-more a:hover {
   color: #5694f1;
 }
-
 .pocket-btn {
   display: inline-block;
   height: 32px;
   vertical-align: middle;
 }
-
 #toc {
   font-size: 14px;
 }
-
 .related-posts {
   margin: 50px 0;
 }
 .related-posts > h4 {
   color: #666;
 }
-
 ul > li {
-  color: #999;
   line-height: 1.7;
-}
 }
