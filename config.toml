@@ -33,11 +33,12 @@ paginate = 104
 	enableGoogleAnalytics = true
 
 	# Navigation links
-	home = ""
-	about = ""
-	archive = ""
-	subscribe = ""
-	tags = ""
+	home = "Home"
+	about = "About"
+	archive = "Archives"
+	subscribe = "Subscribe"
+	tags = "Tag"
+	rss = "rss"
 
 	# Pagination links
 	olderPosts = ""
