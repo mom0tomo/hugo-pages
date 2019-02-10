@@ -85,7 +85,7 @@ and imho, that's sensible behaviour.
 ***
 
 ## onClickにhrefをつけるとどうなるか
-では、React側のonClick()にhrefをつければ解決できるのでしょうか？
+では、React側の `onClick()`にhrefをつければ解決できるのでしょうか？
 
 空のhrefをつけると、画面がリロードされてしまい、意図しない挙動になります。
 
