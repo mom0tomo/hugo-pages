@@ -1,7 +1,7 @@
 ---
 title: "CapybaraでJSのテストをしようとしたらonClickのhref属性でハマった"
 date: 2019-02-12T23:16:50+09:00
-draft: true
+draft: false
 tags: ["Rails", "React"]
 images: ["images/articles/avatar.png"]
 description: "Capybaraを使ってReact JSのテストを書いているときに、onClickで生成されるHTMLのaタグの挙動でハマりました。aタグにhrefがないとCapybaraはリンクとみなさないそうです。かといって空のhrefをつけてしまうとクリックイベントではなく画面のリフレッシュをしてしまいます。これを避けるためにテストの書き方を変えます"
@@ -18,7 +18,7 @@ Capybaraの`Unable to find visible link "hoge"` のエラーを避けるため�
 
 ## 何が起こったか
 
-Reactとreact-modal（モーダル用ライブラリ。）をつかってこんなJavaScriptのコードを書きました。
+Reactとreact-modal（モーダル用ライブラリ。ここでは詳しく紹介しません）をつかってこんなJavaScriptのコードを書きました。
 
 モーダルで選択肢を出し、クリックしたらモーダルを消します。
 
