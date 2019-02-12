@@ -1,6 +1,6 @@
 ---
 title: "CapybaraでJSのテストをしようとしたらonClickのhref属性でハマった"
-date: 2019-02-12T23:16:50+09:00
+date: 2019-02-10T23:16:50+09:00
 draft: false
 tags: ["Rails", "React"]
 images: ["images/articles/avatar.png"]
