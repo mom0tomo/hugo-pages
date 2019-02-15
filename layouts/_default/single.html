@@ -1,13 +1,15 @@
     {{ partial "head.html" . }}
     <body>
        {{ partial "nav.html" . }}
-
         <section id="wrapper">
             <article class="post">
                 <header>
                     <h1>
                         {{ .Title }}
                     </h1>
+                    <div class="posted" style="display:none;">
+                      <a href="{{ .Permalink }}">{{ .Title }}</a>
+                    </div>
                     <h2 class="headline">
                     {{ .Date.Format "Jan 2, 2006 15:04" }}
                     · {{ if lt 1 .WordCount }}{{ .WordCount }} words{{ else }}{{ .WordCount }} word{{ end }}
@@ -32,10 +34,9 @@
                     {{ .Content }}
                 </section>
             </article>
+            {{ partial "sharing.html" . }}
             {{ partial "related.html" . }}
-			{{ partial "sharing.html" . }}
         </section>
-
         {{ partial "js.html" . }}
     </body>
 </html>
