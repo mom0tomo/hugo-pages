@@ -9,6 +9,10 @@ description: "brew 2.0.0から、brew install、brew update、brew reinstallを�
 
 2019/2/2のhomebrew 2.0.0リリースノートに書いてありました。
 
+- 30日ごとに自動で `brew cleanup`が走る
+- `brew install` / `brew update` / `brew reinstall` を実行すると併せて走る
+- これが嫌なときは `HOMEBREW_NO_INSTALL_CLEANUP`という変数を使う
+
 ```
 brew cleanup is run periodically (every 30 days) and triggers
 for individual formula cleanup on reinstall, install or upgrade.
@@ -18,10 +22,6 @@ You can opt-out of this behaviour by setting the HOMEBREW_NO_INSTALL_CLEANUP var
 This addresses a long-standing complaint where users were surprised
 by how much disk space Homebrew used if they did not run brew cleanup.
 ```
-
-- 30日ごとに自動で `brew cleanup`が走る
-- `brew install` / `brew update` / `brew reinstall` を実行すると併せて走る
-- これが嫌なときは `HOMEBREW_NO_INSTALL_CLEANUP`という変数を使う
 
 [homebrew-2.0.0](https://brew.sh/2019/02/02/homebrew-2.0.0/)
 
