@@ -1,7 +1,7 @@
 ---
-title: "yarnではじめるwebpack"
-date: 2019-02-23T23:49:00+09:00
-draft: true
+title: "yarnでシンプルにはじめるwebpack"
+date: 2019-02-24T00:23:00+09:00
+draft: false
 tags: ["Webpack"]
 images: ["images/articles/avatar.png"]
 description: "Reactのモジュールバンドラwebpack入門です。yarnを使ったパッケージのインストール方法、webpackコマンドを使ったビルド方法、watch機能について、できるだけシンプルに書いています。"
