@@ -156,7 +156,7 @@ drwxr-xr-x  9 mom0tomo  staff   288  2 23 20:57 ..
 ## modeを設定する
 webpack.config.jsファイルを利用することで、細かな設定ができます。
 
-webpack.config.jsがなくてもモジュールをバンドルすることは可能ですが、実際は必ず使うので簡単な設定をしてみます。
+webpack.config.jsがなくてもモジュールをバンドルすることは可能ですが、実用の際は必ず使うので簡単な設定をしてみます。
 
 ```
 $ touch webpack.config.js
