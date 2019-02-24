@@ -4,7 +4,7 @@ date: 2019-02-24T00:23:00+09:00
 draft: false
 tags: ["Webpack"]
 images: ["images/articles/avatar.png"]
-description: "Reactのモジュールバンドラwebpack入門です。yarnを使ったパッケージのインストール方法、webpackコマンドを使ったビルド方法、watch機能について、できるだけシンプルに書いています。"
+description: "モジュールバンドラwebpack入門です。yarnを使ったパッケージのインストール方法、webpackコマンドを使ったビルド方法、watch機能について、できるだけシンプルに書いています。"
 ---
 
 Reactのモジュールバンドラ（複数のモジュールファイルを一つにまとめて出力するもの）としてwebpackを使っています。
