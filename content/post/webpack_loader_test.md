@@ -1,7 +1,7 @@
 ---
 title: "webpack.config.jsでloader対象を指定するプロパティ名が test なのはなぜ？"
 date: 2019-03-01T00:08:28+09:00
-draft: fals
+draft: false
 tags: ["Webpack"]
 images: ["images/articles/avatar.png"]
 description: ""
