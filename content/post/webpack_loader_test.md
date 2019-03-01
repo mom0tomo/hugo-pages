@@ -4,7 +4,7 @@ date: 2019-03-01T00:08:28+09:00
 draft: false
 tags: ["Webpack"]
 images: ["images/articles/avatar.png"]
-description: "webpack.config.jsで、loaderの対象とするファイル等を指定するプロパティの名前がtestなのがとてもきになるのですが、これは"
+description: "webpack.config.jsで、loaderの対象とするファイル等を指定するプロパティの名前がtestなのがとても気になるのですが、これはJavaScriptの正規表現オブジェクトのtestメソッドに由来するという説があるようです。真相はわかりません。"
 ---
 webpack.config.jsで、loaderの対象とするファイル等を指定するプロパティの名前が"test"なのが気になって気になってしょうがないです。
 
@@ -17,6 +17,8 @@ module: {
 ```
 
 なんでtestなんだ...と思って色々調べたところ、どうやらJavaScriptでは正規表現オブジェクトに `test()`というメソッドがあるらしいことを知りました。
+
+[Github issue | What is a "test" -- why is named "test"?](https://github.com/webpack/webpack/issues/866)
 
 [MDN web Docs | RegExp.prototype.test()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test)
 
