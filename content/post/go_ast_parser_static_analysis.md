@@ -63,7 +63,7 @@ abstract syntax tree.<br>
 構文解析を行うパッケージです。<br>
 ソースコードを字句解析し、構文解析を行い、抽象構文木(AST)まで作ってくれます。
 
-文字列をパースために、`parser.ParseExpr`関数を使います。
+文字列をパースするために、`parser.ParseExpr`関数を使います。
 
 ```go
 func ParseExpr(x string) (ast.Expr, error)
