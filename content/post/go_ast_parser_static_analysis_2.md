@@ -46,6 +46,7 @@ description: "Go言語では、標準パッケージであるgoパッケージ�
 [scanner/ScanのExample](https://godoc.org/go/scanner#example-Scanner-Scan)をもとに、ソースコードを字句解析し、トークンをつくってみます。
 
 なお、処理を見やすくするためにエラーを潰しているところがあります。
+
 ```go
 package main
 
