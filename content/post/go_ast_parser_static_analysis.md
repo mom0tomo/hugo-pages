@@ -1,8 +1,8 @@
 ---
-title: "Goの標準パッケージではじめる静的解析入門 ①準備編"
+title: "Goの標準パッケージではじめる静的解析入門①準備編"
 date: 2019-03-10T23:52:21+09:00
 draft: false
-tags: ["Go", "標準パッケージ"]
+tags: ["Go", "静的解析"]
 images: ["images/articles/gopher.png"]
 description: "Go言語では、標準パッケージであるgoパッケージが字句解析や構文解析を行う機能を提供しています。go/astやgo/parserを使って構文解析のはじめの一歩を踏み出してみます。今回は用語や利用するパッケージの説明をして、静的解析をはじめる準備をします。"
 ---
@@ -56,6 +56,8 @@ abstract syntax tree.<br>
 ***
 
 ## 利用する標準パッケージ
+静的解析を行うための機能が提供されている、goパッケージ下のパッケージを使います。<br>
+[go配下のパッケージ一覧はこちら](https://golang.org/pkg/go/)です。
 
 ### go/parser
 [go/parser](https://godoc.org/go/parser)
@@ -88,7 +90,7 @@ func Inspect(node Node, f func(Node) bool)
 ## おわりに
 今回は用語や利用する標準パッケージについて説明しました。
 
-次回は静的解析を行う際の流れを確認します。
+[次回](https://mom0tomo.github.io/post/go_ast_parser_static_analysis2)は静的解析を行う際の流れを確認します。
 
 
 
