@@ -127,6 +127,8 @@ func (s *Scanner) Scan() (pos token.Pos, tok token.Token, lit string)
 
 トークンの位置を図るための元になる値を与えるために、便宜的に「ファイル」をつくっているのです。
 
+<br>
+
 ***
 
 ## 構文解析で使うパッケージ
