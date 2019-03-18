@@ -63,12 +63,12 @@ func main() {
     // スキャナーの初期化を行う
     var s scanner.Scanner
 
-    // ファイルの位置や長さに関する情報を保持する構造体を用意する
+    // ファイルの位置や長さに関する情報を保持する構造体(token.FileSet型)を用意する ※ 補足参照
     fset := token.NewFileSet()
     // ファイルをつくり、必要な値を与える
     file := fset.AddFile("", fset.Base(), len(src))
 
-    // ソースコードをトークンにするための処理を行う（ここでファイルを使う）
+    // ソースコードをトークンにするための処理を行う（ここでファイルを使う）※ 補足参照
     s.Init(file, src, nil, scanner.ScanComments)
 
     for {
@@ -90,10 +90,6 @@ func main() {
 
 文字列リテラルとは、ざっくりいうと、ソースコード内に値を直接表記されている0文字以上の連続した文字列の塊のことです。
 
-```go
-func (s *Scanner) Scan() (pos token.Pos, tok token.Token, lit string)
-```
-
 出力結果です。
 
 ```
@@ -104,6 +100,32 @@ func (s *Scanner) Scan() (pos token.Pos, tok token.Token, lit string)
 ```
 
 行数、行の中の位置、トークン、文字列リテラルが出力されました。
+
+<br>
+
+#### 補足： token.FileSetについて
+
+ここで、`token.NewFileSet()`という処理を行っている部分について解説します。
+
+ソースコードの解析にファイルやファイルシステムは関係ないのではないか？と思うかもしれません。わたしも疑問に思いました。
+
+上の処理でファイルは、ソースコードの解析の中で必要となる**トークンの位置**を取得する目的でつくっています。
+
+トークンの位置は、`scanner/Scan`の処理部分で使っています。
+
+`scanner/Scan`の戻り値は下記の３つです。
+
+```go
+func (s *Scanner) Scan() (pos token.Pos, tok token.Token, lit string)
+```
+
+このうち、 `pos`が位置に関係するものです。
+
+トークンの位置情報は絶対的なものではなく、`token.FileSet`を基準にして相対的に決まります。
+
+また、`token.FileSet`における「ファイル」というのは概念上のもので、ファイルシステム上に存在する必要はありません。
+
+トークンの位置を図るための元になる値を与えるために、便宜的に「ファイル」をつくっているのです。
 
 ***
 
