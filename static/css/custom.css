@@ -41,3 +41,7 @@ a.symbol {
 ul > li {
   line-height: 1.7;
 }
+
+figure.glass{
+  width: 50px !important;
+}
