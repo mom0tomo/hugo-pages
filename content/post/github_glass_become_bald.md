@@ -1,5 +1,5 @@
 ---
-title: "リポジトリを削除するとGithubの草は禿げる"
+title: "リポジトリを削除するとGitHubの草は禿げる"
 date: 2019-03-22T16:42:20+09:00
 draft: false
 tags: ["Github"]
