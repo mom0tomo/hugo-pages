@@ -12,9 +12,9 @@ description: "フォルダ整理の感覚でいらなくなったGitHubからリ
 
 試してみた結果です。
 
-before↓{{< figure src="/images/articles/github_glass.png" width="50px">}}
+before↓{{< figure src="/images/articles/github_glasses.png" width="50px" class="glass">}}
 
-after↓{{< figure src="/images/articles/github_glass_bald.png" width="50px">}}
+after↓{{< figure src="/images/articles/github_glasses_bald.png" width="50px" class="glass">}}
 
 これを知ったときわりとショックだったので、いまはGitHubもSNSみたいなものだし...と思って古いリポジトリも削除しないようにしています。(古いツイートを消さないのと同じ感覚)
 
@@ -26,7 +26,7 @@ after↓{{< figure src="/images/articles/github_glass_bald.png" width="50px">}}
 そのため、commitは積んでいても草が禿げている日があります。
 
 この辺↓
-{{< figure src="/images/articles/github_no_glass.png" width="50px">}}
+{{< figure src="/images/articles/github_no_glasses.png" width="50px" class="glass">}}
 
 こちらは、masterにマージするとそれぞれのcommitをした日まで遡って草が生えるそうです。
 
