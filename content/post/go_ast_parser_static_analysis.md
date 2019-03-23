@@ -90,7 +90,7 @@ func Inspect(node Node, f func(Node) bool)
 ## おわりに
 今回は用語や利用する標準パッケージについて説明しました。
 
-[次回](https://mom0tomo.github.io/post/go_ast_parser_static_analysis2)は静的解析を行う際の流れを確認します。
+[次回](https://mom0tomo.github.io/post/go_ast_parser_static_analysis_2)は静的解析を行う際の流れを確認します。
 
 
 
