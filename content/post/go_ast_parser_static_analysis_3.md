@@ -1,6 +1,6 @@
 ---
-title: "Goの標準パッケージではじめる静的解析入門③実用編"
-date: 2019-03-23T20:32:28+09:00
+title: "Goの標準パッケージではじめる静的解析入門③実践編"
+date: 2019-03-24T19:32:28+09:00
 draft: false
 tags: ["Go", "静的解析"]
 images: ["images/articles/avatar.png"]
@@ -22,8 +22,11 @@ description: "Go言語では、標準パッケージであるgoパッケージ�
 ```
 $ mkdir example
 $ touch example/example.go 
+
+$ touch main.go
 ```
-今回はexampleの内容を以下のようにします。
+
+今回はexample.goの内容を以下のようにします。
 ```
 package example
 
@@ -37,7 +40,7 @@ func example() {
 }
 ```
 
-main.goには、いったん抽象構文木(AST)を取得する処理まで書いておきます。
+またmain.goには、いったん抽象構文木(AST)を取得する処理まで書いておきます。
 
 ```go
 package main
