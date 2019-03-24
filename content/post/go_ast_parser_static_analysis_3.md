@@ -222,8 +222,9 @@ example.goのソースコードにおける抽象構文木(AST)のすべての�
 
 - [A Tour of Static Analysis | by tenntennさん](https://docs.google.com/presentation/d/13FcaQiFnUBk6xb1cNyNUmEIhqTXYMJAs3oUpxXP5_dM/edit#slide=id.g5475518c10_0_0)
 
-ハンズオンの時間では、golang.tokyoのコードラボ上の教材を進めている方もいました。
+ハンズオンの時間では、golang.tokyoのコードラボ上の教材を進めている方もたくさんいらっしゃいました。
 
-これから静的解析を始めてみたい方は、こちらもお試しください。
+これから静的解析を始めてみたい方は、こちらのコードラボから始めてみるのもおすすめです。
 
-- [golang.tokyo コードラボ | 静的解析をはじめよう - Gopherをさがせ！](https://golangtokyo.github.io/codelab/find-gophers/?index=codelab)
+- [golang.tokyo コードラボ | 静的解析をはじめよう - Gopherをさがせ！](https://golangtokyo.github.io/codelab/find-gophers/)
+- [型チェックでインターフェースを実装しているか調べよう](https://golangtokyo.github.io/codelab/first-step-type-check/)
