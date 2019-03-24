@@ -43,7 +43,11 @@ abstract syntax tree.<br>
 
 ## やること
 - 字句解析/構文解析
-- 抽象構文木(AST)のトラバース/ノードの変更
+- 抽象構文木(AST)のトラバース
+- 位置情報の取得
+- 型情報の取得
+
+静的解析を行うための機能が提供されている、[goパッケージ配下のパッケージ](https://golang.org/pkg/go/)を使います。
 
 ## やらないこと
 - 静的解析のモジュール化
@@ -55,35 +59,66 @@ abstract syntax tree.<br>
 
 ***
 
-## 利用する標準パッケージ
-静的解析を行うための機能が提供されている、goパッケージ下のパッケージを使います。<br>
-[go配下のパッケージ一覧はこちら](https://golang.org/pkg/go/)です。
+## 字句解析で利用するパッケージ
 
-### go/parser
-[go/parser](https://godoc.org/go/parser)
+### [go/scanner](https://godoc.org/go/scanner)
 
-構文解析を行うパッケージです。<br>
+字句解析を行う際に使うパッケージです。
+
+`scanner/Scan`関数を使い、ソースコードを読み込み、トークンの位置、トークン、srcで与えた値の文字列リテラルを取得します。
+
+[scanner/Scan](https://godoc.org/go/scanner#Scanner.Scan)
+```go
+func (s *Scanner) Scan() (pos token.Pos, tok token.Token, lit string)
+```
+
+<br>
+
+### [go/token](https://golang.org/pkg/go/token/)
+
+字句解析を行う際に使うパッケージです。
+
+ファイルの位置や長さに関する情報を保持する構造体(token.FileSet型)です。
+
+[token/FileSet](https://godoc.org/go/token#FileSet)
+```go
+type FileSet struct {
+    // contains filtered or unexported fields
+}
+```
+
+`scanner/Scan`などを使って取得するトークンの位置情報は絶対的なものではなく、`token.FileSet`を基準として相対的に決められます。
+
+<br>
+
+## 構文解析で利用するパッケージ
+
+### [go/parser](https://godoc.org/go/parser)
+
+構文解析を行う際に使うパッケージです。
+
 ソースコードを字句解析し、構文解析を行い、抽象構文木(AST)まで作ってくれます。
 
 文字列をパースするために、`parser.ParseExpr`関数を使います。
 
+[parser/ParseExpr](https://godoc.org/go/parser#ParseExpr)
+
 ```go
 func ParseExpr(x string) (ast.Expr, error)
 ```
-- [parser/ParseExpr](https://godoc.org/go/parser#ParseExpr)
 
-### go/ast
-[go/ast](https://godoc.org/go/ast)
+<br>
+
+### [go/ast](https://godoc.org/go/ast)
 
 抽象構文木(AST)を定義したパッケージです。
 
 抽象構文木（AST）をトラバースするために、`ast.Inspect`関数を使います。
 
+[ast/Inspect](https://godoc.org/go/ast#Inspect)
 ```go
 func Inspect(node Node, f func(Node) bool)
 ```
-
-- [ast/Inspect](https://godoc.org/go/ast#Inspect)
 
 ***
 
