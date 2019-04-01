@@ -1,0 +1,24 @@
+{
+  "name": "hugo-pages",
+  "version": "1.0.0",
+  "description": "hugoでつくるブログサイト[mom0tomo.github.io](https://mom0tomo.github.io)の本体。<br> デプロイ先: https://github.com/mom0tomo/mom0tomo.github.io",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "textlint": "^11.2.3",
+    "textlint-rule-preset-ja-technical-writing": "^3.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mom0tomo/hugo-pages.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mom0tomo/hugo-pages/issues"
+  },
+  "homepage": "https://github.com/mom0tomo/hugo-pages#readme"
+}
