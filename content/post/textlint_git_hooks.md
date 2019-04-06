@@ -14,7 +14,8 @@ textlintは日本語の文章構成ツールで、Markdownなどテキストの�
 
 詳しい使い方についてはcommitterである@azuさんのブログが詳しいです。
 
-[textlintで日本語の文章をチェックする](https://efcl.info/2015/09/10/introduce-textlint/)
+- [textlintで日本語の文章をチェックする](https://efcl.info/2015/09/10/introduce-textlint/)
+- [技術文書を書くためのtextlint校正ルールセット](https://efcl.info/2016/07/13/textlint-rule-preset-ja-technical-writing/)
 
 ***
 
@@ -42,7 +43,13 @@ v11.2.3
 
 <br>
 
-`.textlintrc`にルールを追加します。技術ブログを書く際に便利な`preset-ja-technical-writing`を追加します。
+技術文書向けのtextlintルールプリセットである[preset-ja-technical-writing](https://github.com/textlint-ja/textlint-rule-preset-ja-technical-writing)を導入します。
+
+```shell
+$ npm install textlint-rule-preset-ja-technical-writing --save-dev
+```
+
+`.textlintrc`にルールを追加します。
 
 ```shell
 {
