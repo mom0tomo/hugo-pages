@@ -38,6 +38,22 @@ $ textlint -v
 v11.2.3
 ```
 
+インストールされたことが確認できました。
+
+<br>
+
+`.textlintrc`にルールを追加します。技術ブログを書く際に便利な`preset-ja-technical-writing`を追加します。
+
+.textlintrc
+```shell
+{¬
+  "filters": {},
+  "rules": {
+    "preset-ja-technical-writing": true
+  }
+}
+```
+
 ***
 
 ## git hookを利用してcommit時にリンターをかける
