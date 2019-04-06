@@ -44,7 +44,6 @@ v11.2.3
 
 `.textlintrc`にルールを追加します。技術ブログを書く際に便利な`preset-ja-technical-writing`を追加します。
 
-.textlintrc
 ```shell
 {¬
   "filters": {},
