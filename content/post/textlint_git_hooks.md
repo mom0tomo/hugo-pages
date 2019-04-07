@@ -10,7 +10,7 @@ description: "静的サイトジェネレータhugoを使って書いている�
 
 静的サイトジェネレータhugoを使っているブログでtypoやスペルミスを繰り返してしまっていたので[textlint](https://github.com/textlint/textlint)を入れることにしました。
 
-textlintは日本語の文章構成ツールで、Markdownなどテキストのリンターとして使います。
+textlintは日本語の文章校正ツールで、Markdownなどテキストのリンターとして使います。
 
 詳しい使い方についてはcommitterである@azuさんのブログが詳しいです。
 
