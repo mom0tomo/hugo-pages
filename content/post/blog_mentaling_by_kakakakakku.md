@@ -3,7 +3,7 @@ title: "@kakakakakkuさんのブログメンタリングを受けて卒業した
 date: 2019-04-11T19:30:40+09:00
 draft: false
 tags: ["Women Who Go Tokyo", "Blog"]
-images: ["images/articles/avatar.png"]
+images: ["images/articles/techbookfest201904.png"]
 description: "@kakakakakkuさんにメンターになっていただき3ヶ月間ブログを見てアドバイスをいただきました。定期的にアウトプットする習慣と人に読んでもらっているという自信がつきました。今後はもう少し気軽に、自分なりの発見や意見を加えて文章を書いていきたいです。メンタリングで身につけた力を生かして本を書き、技術書典で頒布します。"
 ---
 
