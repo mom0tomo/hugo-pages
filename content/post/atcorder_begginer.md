@@ -45,4 +45,4 @@ paizaではスキルチェックのスコアを求人のスカウト時の判定
 
 この記事と記事内リンクに、はじめるにあたって必要な情報はほぼまとまっていました。ありがたいです。
 
-まずは[AtCoder Beginners Selection](https://atcoder.jp/contests/abs/tasks/practice_1)をいくつか解いています。
+まずは[AtCoder Beginners Selection](https://atcoder.jp/contests/abs/tasks)をいくつか解いています。
