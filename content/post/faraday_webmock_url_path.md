@@ -4,7 +4,7 @@ date: 2019-05-10T19:36:05+09:00
 draft: false
 tags: ["Ruby"]
 images: ["images/articles/avatar.png"]
-description: ""
+description: "Faradayでは、パスを書くときの決まりがありました。先頭にスラッシュを入れていると、FaradayによってURLは絶対パスとして扱われ、ドメイン部分のみがURLとされます。ドメイン以下のパスは破棄されてしまいます。"
 ---
 
 ## 起こったこと
