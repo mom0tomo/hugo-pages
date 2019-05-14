@@ -83,11 +83,9 @@ class Client
 
 `http://example.com/register`に対してGETしてしまっています。
 
-***
-
 この動作に関して、issueが上がっていました。
 
-[#293 Faraday removes paths in base url](https://github.com/lostisland/faraday/issues/293)
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/lostisland/faraday/issues/293" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgithub.com%2Flostisland%2Ffaraday%2Fissues%2F293&key=2621d5600f6d423389afec325dbfc63d"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
 ***
 
@@ -98,9 +96,9 @@ class Client
 
 このためWebサイトのルートディレクトリであるドメイン部分を残し、それ以下のパスは破棄されるそうです。
 
-なるほど...
+なるほど...。
 
-READMEには下記のように先頭スラッシュで始まるサンプルがあるので、このような間違いを誘うのかもしれません。
+READMEのサンプルが先頭スラッシュで始まっているので、このような間違いを誘うのかもしれません。
 
 ```ruby
 conn = Faraday.new(:url => 'http://www.example.com')
