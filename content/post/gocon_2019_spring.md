@@ -73,7 +73,8 @@ Licensed under the Creative Commons 3.0 Attributions license.
 ***
 
 ## Chillout Space
-- [Women Who Go Tokyo Codelado | Go と Google Cloud Functions で楽しもう](https://womenwhogotokyo.github.io/codelab/google-cloud-functions-go/#2)
+### Codelabs
+- [Women Who Go Tokyo Codelabs | Go と Google Cloud Functions で楽しもう](https://womenwhogotokyo.github.io/codelab/google-cloud-functions-go/#2)
 
 ***
 
