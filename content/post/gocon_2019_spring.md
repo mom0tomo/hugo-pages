@@ -64,7 +64,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 ***
 
 ## Room C
-- [Golang JP Google+ Community Survey Results](https://github.com/qt-luigi/talks/blob/master/2019/survey-results/pdf/event-list-tokyo.pdf)
+- [Golang JP Google+ Community Survey Results](https://talks.godoc.org/github.com/qt-luigi/talks/2019/survey-results.slide#1)
 - [Subee: Pub/Sub Worker Framework Implementation](https://speakerdeck.com/hlts2/sub-worker-framework-implementation)
 - [Golang で Docker ベースの CI を作る](https://speakerdeck.com/duck8823/golangdedockerbesufalseciwozuo-ru)
 - [Dark side of the reflect](https://www.slideshare.net/sairoutine/dark-side-of-the-reflect-146395066)
