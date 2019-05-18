@@ -102,3 +102,10 @@ Licensed under the Creative Commons 3.0 Attributions license.
 - [Go Conference 2019 Spring After report! #gocon
 ](https://www.wantedly.com/companies/wantedly/post_articles/169350)
 - [Go Conference Tokyo 2019 Spring スピーカー参加・聴講感想 #gocon](https://khigashigashi.hatenablog.com/entry/2019/05/18/162918)
+
+## おわりに
+運営のみなさまお疲れさまでした。わたしは今回当日スタッフのみのお手伝いでしたが、スタッフのみなさまの入念な事前準備を見ていてその大変さをよく理解しました。
+
+そしてスポンサーのみなさま大変ありがとうございました。
+
+このようなすばらしいカンファレンスに日本で参加することができて幸せです。
