@@ -4,14 +4,15 @@ date: 2019-05-18T21:14:44+09:00
 draft: false
 tags: ["Go", "event"]
 images: ["images/articles/gocon2019.png"]
-description: "GoCon2019 springでスタッフをしてきました。最大４ルームにて発表が行われた大規模な開催でした。全ての発表を見ることはできなかったため、公開されているスライドのリンクをまとめました。"
+description: "GoCon2019 springでスタッフをしてきました。最大４ルームにて発表が行われた大規模な開催でした。
+全ての発表を見ることができないのが残念でしたので、公開されているスライドのリンクをまとめました。"
 ---
 ## はじめに
 [GoCon2019 spring](https://gocon.jp)でスタッフをしてきました。最大４ルームにて発表が行われた大規模な開催でした。
 
 <div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://gocon.connpass.com/event/124530/" data-iframely-url="//cdn.iframe.ly/api/iframe?url=https%3A%2F%2Fgocon.connpass.com%2Fevent%2F124530%2F&key=2621d5600f6d423389afec325dbfc63d&iframe=card-small"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
 
-全ての発表を見ることはできなかったため、公開されているスライドのリンクをまとめました。
+全ての発表を見ることができないのが残念でしたので、公開されているスライドのリンクをまとめました。
 
 ```
 GoのマスコットキャラクターGopherのデザインはRenee Frenchさんによるものです。
