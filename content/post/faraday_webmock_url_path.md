@@ -104,3 +104,20 @@ READMEのサンプルが先頭スラッシュで始まっているので、こ�
 conn = Faraday.new(:url => 'http://www.example.com')
 response = conn.get '/users' # GET http://www.example.com/users'
 ```
+
+#### 追記
+Faradayの面白い仕様（先頭スラッシュにするとバスを削除しちゃうやつ）、issueあげたらREADMEに挙動を追記してくれました！
+
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/lostisland/faraday/issues/976" data-iframely-url="//cdn.iframe.ly/TkSSFpA"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
+
+README:
+```ruby
+conn = Faraday.new(:url => 'http://www.example.com/api')
+response = conn.get 'users'                 # GET http://www.example.com/api/users'
+
+# You can override the path from the connection initializer by using an absolute path
+response = conn.get '/users'                # GET http://www.example.com/users'
+```
+
+これでもう間違えない。
