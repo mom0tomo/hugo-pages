@@ -58,7 +58,6 @@ Licensed under the Creative Commons 3.0 Attributions license.
 - Design pattern for Image and text composition in Go
 - [GoでAPIサーバをはやくつくる](https://speakerdeck.com/juntaki/godeapisabawohayakutukuru)
 - [Fuzzy finder as a Go library](https://speakerdeck.com/ktr_0731/fuzzy-finder-as-a-go-library)
-- [JavaプログラムをGoに移植するためのテクニック ―- 継承と例外](https://speakerdeck.com/makki_d/javapuroguramuwogoniyi-zhi-surutamefalsetekunituku-ji-cheng-toli-wai-fbed2363-bfcc-437e-afe9-c29adbbb18d7)
 - [CPU, Memory and Go](https://speakerdeck.com/sonatard/cpu-memory-and-go)
 
 ***
@@ -67,6 +66,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 - [Golang JP Google+ Community Survey Results](https://talks.godoc.org/github.com/qt-luigi/talks/2019/survey-results.slide#1)
 - [Subee: Pub/Sub Worker Framework Implementation](https://speakerdeck.com/hlts2/sub-worker-framework-implementation)
 - [Golang で Docker ベースの CI を作る](https://speakerdeck.com/duck8823/golangdedockerbesufalseciwozuo-ru)
+- [JavaプログラムをGoに移植するためのテクニック -- 継承と例外](https://speakerdeck.com/makki_d/javapuroguramuwogoniyi-zhi-surutamefalsetekunituku-ji-cheng-toli-wai-fbed2363-bfcc-437e-afe9-c29adbbb18d7)
 - [Dark side of the reflect](https://www.slideshare.net/sairoutine/dark-side-of-the-reflect-146395066)
 
 ***
