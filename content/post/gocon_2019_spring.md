@@ -94,7 +94,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 ### LT
 - [gobpfでPostgreSQLを動的トレーシングする](https://docs.google.com/presentation/d/1yR6H2gJbUA0F7nQe6dZk9MJjEPIzmDlFk5_sVGS2wQw/edit#slide=id.p1)
 - [標準パッケージにおけるテストでの利用例から学ぶ testing / quick パッケージ](https://speakerdeck.com/yusukehosonuma/golang-testing-quick)
-- SQLFormatter written in Go
+- [SQLFormatter written in Go](https://speakerdeck.com/pongzu/sqlformatter-written-in-go)
 - [Event Sourcing with Go](https://docs.google.com/presentation/d/16s8bynqiupbB_n-KVjvA0Biy3mgatN3KSg4shyJ_C6A/edit)
 - [俺はビッグエンディアンでテストがしたいんだ！！！](https://docs.google.com/presentation/d/1RWbGPNlMUlSW98pUVn5GNaWgoaON481mnGJft47pEKU/edit)
 - システムライブラリに依存しないlessコマンドAPIの簡易版を作った
