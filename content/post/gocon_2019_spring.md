@@ -79,6 +79,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 ***
 
 ## Others
+### toggtter
 - [toggtterまとめ](https://togetter.com/li/1356331)
 
 ### Sponsors
@@ -102,6 +103,13 @@ Licensed under the Creative Commons 3.0 Attributions license.
 - [Go Conference 2019 Spring After report! #gocon
 ](https://www.wantedly.com/companies/wantedly/post_articles/169350)
 - [Go Conference Tokyo 2019 Spring スピーカー参加・聴講感想 #gocon](https://khigashigashi.hatenablog.com/entry/2019/05/18/162918)
+- [[補足資料] Go Conference 2019 Springでdatabase/sql入門を発表した #gocon - My External Storage ](https://budougumi0617.github.io/2019/05/19/gocon2019spring/)
+- [Go Conference 2019 Spring で登壇してきた。- CIARANA](https://medium.com/@cia_rana/go-conference-2019-spring-%E3%81%A7%E7%99%BB%E5%A3%87%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-168e47f36d21)
+- [Go Conference 2019 Spring で発表してきた - blog.syfm](https://syfm.hatenablog.com/entry/2019/05/19/170218)
+- [Go Conference 2019 Spring で登壇して反省しました - micnncim](https://micnncim.github.io/2019/05/18/go-conference-2019-spring/)
+- [Go Conference 2019 Springにスカラーシップで参加してきた - サーバーサイドを嗜む](https://ssabcire.hatenablog.com/entry/2019/05/19/161026)
+- [Go Conference 2019 Spring」に参加してきた！ - Fumiエンジニアブログ](https://engineer-fumi.hatenablog.com/entry/2019/05/18/172000)
+- [Go Conference 2019 Spring に参加してきました - ミツバブログ ](https://mitubaex.hatenablog.com/entry/2019/05/19/014059)
 
 ## おわりに
 運営のみなさまお疲れさまでした。わたしは今回当日スタッフのみのお手伝いでしたが、スタッフのみなさまの入念な事前準備を見ていてその大変さをよく理解しました。
