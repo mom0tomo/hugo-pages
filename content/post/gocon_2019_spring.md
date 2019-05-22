@@ -56,7 +56,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 - [エラー設計について/Designing Errors](https://docs.google.com/presentation/d/1JIdZ4IVW2D3kEFUtWSvHNes3r3ykojGuUAQAnhmEVs0/edit)
 - [Gopherと行く Langな旅](https://yooappn.github.io/talks/gocon-2019-spring/index.html#1)
 - [Go1.9 で作られた App Engine のサービスを Go1.11 に移行した話](https://speakerdeck.com/emahiro/go-conference-2019-spring-go1-dot-9-to-go1-dot-11)
-- Design pattern for Image and text composition in Go
+- [Design pattern for Image and text composition in Go](https://speakerdeck.com/timakin/design-pattern-for-image-and-text-composition-in-go)
 - [GoでAPIサーバをはやくつくる](https://speakerdeck.com/juntaki/godeapisabawohayakutukuru)
 - [Fuzzy finder as a Go library](https://speakerdeck.com/ktr_0731/fuzzy-finder-as-a-go-library)
 - [CPU, Memory and Go](https://speakerdeck.com/sonatard/cpu-memory-and-go)
@@ -102,6 +102,7 @@ Licensed under the Creative Commons 3.0 Attributions license.
 ### ブログなど
 - [Go Conference 2019 Spring After report! #gocon
 ](https://www.wantedly.com/companies/wantedly/post_articles/169350)
+- [Go Conference Tokyo 2019 Spring にて行った発表内容の作り方 #gocon](https://devblog.thebase.in/entry/2019/05/22/110000)
 - [Go Conference Tokyo 2019 Spring スピーカー参加・聴講感想 #gocon](https://khigashigashi.hatenablog.com/entry/2019/05/18/162918)
 - [[補足資料] Go Conference 2019 Springでdatabase/sql入門を発表した #gocon - My External Storage ](https://budougumi0617.github.io/2019/05/19/gocon2019spring/)
 - [Go Conference 2019 Spring で登壇してきた。- CIARANA](https://medium.com/@cia_rana/go-conference-2019-spring-%E3%81%A7%E7%99%BB%E5%A3%87%E3%81%97%E3%81%A6%E3%81%8D%E3%81%9F-168e47f36d21)
