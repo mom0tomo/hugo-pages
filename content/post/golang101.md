@@ -7,7 +7,7 @@ images: ["images/articles/avatar.png"]
 description: "@nasa9084氏が講師として開催したGolang101というイベントにTAとして参加してきました。ふだんWomenWhoGoTokyoのスタッフとして初心者向けの勉強会のスタッフをしていますが、それ以外のコミュニティでTAをするのは初めてだったので、勉強になりました。"
 ---
 ## はじめに
-[@nasa9084](https://twitter.com/nasa9084)氏が講師として開催したGolang101というイベントの第1回に、TAとして参加してきました。
+[@nasa9084](https://twitter.com/nasa9084)氏が講師として開催した[Golang101](https://golang101.connpass.com/event/135889/)というイベントの第1回に、TAとして参加してきました。
 
 ふだんわたしはWomenWhoGoTokyoのスタッフとして初心者向けの勉強会で教えたり教わったりする立場ですが、それ以外のコミュニティでTAをするのは初めてでした。
 
