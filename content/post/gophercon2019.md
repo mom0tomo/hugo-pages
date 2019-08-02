@@ -52,3 +52,6 @@ GopherConには人種や性別、年齢はもとより様々な文化的背景�
 このような様々な支援があるためGopherConに参加するのはとても楽しく、わたしは2年続けて参加しました。
 
 GopherConのコミュニティ運営のすばらしいところをWomen Who Go Tokyoにも取り入れていきたいと思っています。
+
+もっと写真のある記事はこちら<br>
+[livesense days | GopherCon 2019に行ってきた](https://days.livesense.co.jp/n/n0f9cb272f5cc)
