@@ -31,3 +31,8 @@ Personal, [github.com/mom0tomo](https://github.com/mom0tomo/).
 
 <br>
 More in [speakerdeck.com](https://speakerdeck.com/mom0tomo).
+
+***
+
+### Travel logs
+[旅行記 | mom0tomo](http://mom0tomo.hatenablog.com/)
