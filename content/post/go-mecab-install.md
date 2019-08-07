@@ -12,6 +12,8 @@ description: "オープンソース形態素解析エンジンMeCabのGo言語�
 
 コードはGoで書きたかったので、他の方が使っているところを何度か見かけたGoのラッパー [mecab-golang](https://github.com/bluele/mecab-golang)を使うことにしました。
 
+<div class="iframely-embed"><div class="iframely-responsive" style="height: 140px; padding-bottom: 0;"><a href="https://github.com/bluele/mecab-golang" data-iframely-url="//cdn.iframe.ly/5GNgBw4"></a></div></div><script async src="//cdn.iframe.ly/embed.js" charset="utf-8"></script>
+
 Mac & fish shellで初期設定をするときにちょっと詰まったので手順をまとめます。
 
 ## MeCabのインストール
