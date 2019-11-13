@@ -5,7 +5,7 @@
   "main": "index.js",
   "dependencies": {},
   "devDependencies": {
-    "textlint": "^11.2.3",
+    "textlint": "^11.5.0",
     "textlint-rule-preset-ja-technical-writing": "^3.1.2"
   },
   "scripts": {
