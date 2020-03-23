@@ -2,7 +2,7 @@
 title: "Sequel Pro Nightly buildをbrewでインストールできない（IPv6関連のエラー）"
 date: 2019-12-31T23:01:02+09:00
 draft: false
-tags: ["Go","Ruby", "career", "event", "English", "Rails", "JS", "React"]
+tags: ["MySQL"]
 images: ["images/articles/avatar.png"]
 description: ""
 ---
