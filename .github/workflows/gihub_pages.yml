@@ -1,0 +1,55 @@
+name: CI
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+    # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+    - uses: actions/checkout@v2
+      with:
+        submodules: true
+
+    - name: Hugo setup
+      uses: peaceiris/actions-hugo@v2.4.7
+      with:
+        # The Hugo version to download (if necessary) and use. Example: 0.58.2
+        hugo-version: latest
+        # Download (if necessary) and use Hugo extended version. Example: true
+        # extended: # optional, default is false
+
+    - name: GitHub Pages v3
+      uses: peaceiris/actions-github-pages@v3.1.12
+      with:
+        # deploy_key: # optional
+        # github_token: # optional
+        # personal_token: # optional 
+        publish_branch: master
+        # publish_dir: # optional, default is public
+        external_repository: mom0tomo/mom0tomo.github.io
+        # If empty commits should be made to the publication branch
+        # allow_empty_commit: # optional, default is false
+        # If existing files in the publish branch should be not removed before deploying
+        # keep_files: # optional, default is false
+        # Keep only the latest commit on a GitHub Pages branch
+        # force_orphan: # optional, default is false
+        # Set Git user.name
+        # user_name: # optional
+        # Set Git user.email
+        # user_email: # optional
+        # Set custom commit message
+        # commit_message: # optional
+        # Set tag name
+        # tag_name: # optional
+        # Set tag message
+        # tag_message: # optional
