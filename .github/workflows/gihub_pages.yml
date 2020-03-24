@@ -31,7 +31,6 @@ jobs:
     - name: GitHub Pages v3
       uses: peaceiris/actions-github-pages@v3.1.12
       with:
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: mom0tomo/mom0tomo.github.io
         publish_branch: master
