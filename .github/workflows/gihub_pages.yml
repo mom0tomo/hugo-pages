@@ -35,7 +35,7 @@ jobs:
         external_repository: mom0tomo/mom0tomo.github.io
         publish_branch: master
         publish_dir: ./public
-        # github_token: # optional
+        github_token: ${{ secrets.GITHUB_TOKEN }}
         # personal_token: # optional 
         # publish_dir: # optional, default is public
         # If empty commits should be made to the publication branch
