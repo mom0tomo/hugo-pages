@@ -31,12 +31,13 @@ jobs:
     - name: GitHub Pages v3
       uses: peaceiris/actions-github-pages@v3.1.12
       with:
-        # deploy_key: # optional
+        deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        external_repository: mom0tomo/mom0tomo.github.io
+        publish_branch: master
+        publish_dir: ./public
         # github_token: # optional
         # personal_token: # optional 
-        github_token: ${{ secrets.GITHUB_TOKEN }}
         # publish_dir: # optional, default is public
-        external_repository: mom0tomo/mom0tomo.github.io
         # If empty commits should be made to the publication branch
         # allow_empty_commit: # optional, default is false
         # If existing files in the publish branch should be not removed before deploying
