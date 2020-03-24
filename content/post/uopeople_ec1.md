@@ -2,7 +2,7 @@
 title: "UopeopleのEnglish Composition 1を受講してみた"
 date: 2020-03-23T23:35:46+09:00
 draft: false
-tags: ["English", "career"]
+tags: ["UoPeople", "career", "English"]
 images: ["images/articles/avatar.png"]
 description: "University of the Peopleに入学して3ヶ月間English Composition 1を受講した感想です。"
 ---

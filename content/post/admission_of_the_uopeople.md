@@ -2,7 +2,7 @@
 title: "the UoPeople の Computer Science 学士過程に入学した"
 date: 2020-02-09T22:45:58+09:00
 draft: false
-tags: ["career", "English", "Computer Science"]
+tags: ["UoPeople", "career", "English", "Computer Science"]
 images: ["images/articles/uopeople.png"]
 description: "The University of the Peple というアメリカの大学の Computer Science 学士過程に入学することにしました。すべての過程をリモートで終えられること、アメリカの大学の認可を通った信頼できる大学であること、学費がとても安いことなど、働きながら CS を学士課程で学び直したいという自分の要望と条件が合致していると思いました。週30時間の勉強時間を確保することと、卒業まで頑張り続けられるかどうかはだいぶ不安でしたが、思い立ったが吉日と思い元日に申し込みをしました。"
 ---
