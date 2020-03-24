@@ -40,7 +40,7 @@ jobs:
         # If empty commits should be made to the publication branch
         # allow_empty_commit: # optional, default is false
         # If existing files in the publish branch should be not removed before deploying
-        # keep_files: # optional, default is false
+        keep_files: true
         # Keep only the latest commit on a GitHub Pages branch
         # force_orphan: # optional, default is false
         # Set Git user.name
