@@ -33,7 +33,7 @@ jobs:
       with:
         deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
         external_repository: mom0tomo/mom0tomo.github.io
-        publish_branch: master
+        # publish_branch: 
         publish_dir: ./public
         # personal_token: # optional 
         # publish_dir: # optional, default is public
