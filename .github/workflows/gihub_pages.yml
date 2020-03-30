@@ -19,7 +19,7 @@ jobs:
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.4.7
         with: 
-          hugo-version: '0.64.0'
+          hugo-version: '0.53.0'
         # Download (if necessary) and use Hugo extended version. Example: true
         # extended: # optional, default is false
 
@@ -33,8 +33,7 @@ jobs:
           external_repository: mom0tomo/mom0tomo.github.io
           publish_branch: master
           publish_dir: ./public
-          # personal_token: # optional 
-          # publish_dir: # optional, default is public
+          # personal_token: # optional
           # If empty commits should be made to the publication branch
           # allow_empty_commit: # optional, default is false
           # If existing files in the publish branch should be not removed before deploying
