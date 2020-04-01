@@ -11,9 +11,9 @@ description: ""
 
 キャプチャのように設定したら変えられました。
 
-![System Preferences](/images/articles/setup_new_mac_2020_03/1.png)
-![Keyboard]((/images/articles/setup_new_mac_2020_03/2.png)
-![Modifier Keys...]((/images/articles/setup_new_mac_2020_03/3.png)
+![System Preferences](/images/articles/setup_new_mac_2020_03/preference1.png)
+![Keyboard](/images/articles/setup_new_mac_2020_03/preference2.png)
+![Modifier Keys...](/images/articles/setup_new_mac_2020_03/preference3.png)
 
 ## dotfiles
 gitで管理しており、install.shでシンボリックリンクを貼るだけ。
