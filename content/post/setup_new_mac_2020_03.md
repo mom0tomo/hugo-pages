@@ -6,15 +6,6 @@ tags: ["Mac"]
 images: ["images/articles/avatar.png"]
 description: ""
 ---
-## キーの変更
-邪魔で使わないCaps LockをCtrlキーに変えたい。JISキーボードと同じ場所にCtrlキーをおきたい。
-
-キャプチャのように設定したら変えられました。
-
-![System Preferences](/images/articles/setup_new_mac_2020_03/preference1.png)
-![Keyboard](/images/articles/setup_new_mac_2020_03/preference2.png)
-![Modifier Keys...](/images/articles/setup_new_mac_2020_03/preference3.png)
-
 ## dotfiles
 gitで管理しており、install.shでシンボリックリンクを貼るだけ。
 ```
@@ -31,6 +22,16 @@ $ /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/inst
 
 ***
 
+## キーの変更
+邪魔で使わないCaps LockをCtrlキーに変えたい。JISキーボードと同じ場所にCtrlキーをおきたい。
+
+キャプチャのように設定したら変えられました。
+
+![System Preferences](/images/articles/setup_new_mac_2020_03/preference1.png)
+![Keyboard](/images/articles/setup_new_mac_2020_03/preference2.png)
+![Modifier Keys...](/images/articles/setup_new_mac_2020_03/preference3.png)
+
+
 ## Screen Shotの場所を変更する
 デスクトップがごちゃごちゃするのが嫌なので`~/sshot`という場所にスクリーンショットが収まるようにしています。
 ```
@@ -45,8 +46,10 @@ $ defaults write com.apple.screencapture location ~/SS/;killall SystemUIServer
 $ defaults delete com.apple.screencapture location;killall SystemUIServer
 ```
 
+***
+
 ## Go言語のダウンロード
-いまやGOPATHの指定など難しいことはなくなり、ダウンロードボタンをポチッとして開くだけで完結するようになりました。わたしは進化の歴史の目撃者です。
+いまやGOPATHの指定など難しいことはなくなり、ダウンロードボタンをポチッとして開くだけで完結するようになりました。
 https://golang.org/dl/
 
 ***

@@ -19,7 +19,7 @@ jobs:
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.4.7
         with: 
-          hugo-version: '0.60.0'
+          hugo-version: '0.68.3'
         # Download (if necessary) and use Hugo extended version. Example: true
         # extended: # optional, default is false
 
