@@ -8,7 +8,6 @@ on:
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   build-deploy:
     runs-on: ubuntu-18.04
     steps:
@@ -19,7 +18,7 @@ jobs:
       - name: Hugo setup
         uses: peaceiris/actions-hugo@v2.4.7
         with: 
-          hugo-version: '0.68.3'
+          hugo-version: 'latest'
         # Download (if necessary) and use Hugo extended version. Example: true
         # extended: # optional, default is false
 
@@ -31,7 +30,7 @@ jobs:
         with:
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: mom0tomo/mom0tomo.github.io
-          publish_branch: master
+          publish_branch: gh-pages
           publish_dir: ./public
           # personal_token: # optional
           # If empty commits should be made to the publication branch
