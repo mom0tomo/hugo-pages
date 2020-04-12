@@ -2,13 +2,16 @@ name: CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      - master
   pull_request:
-    branches: [ master ]
+    types:
+      - opened
+      - synchronize
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  build-deploy:
+  ci:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
@@ -34,17 +37,15 @@ jobs:
           publish_dir: ./public
           # personal_token: # optional
           # If empty commits should be made to the publication branch
-          # allow_empty_commit: # optional, default is false
+          allow_empty_commit: true
           # If existing files in the publish branch should be not removed before deploying
           keep_files: true
           # Keep only the latest commit on a GitHub Pages branch
           # force_orphan: # optional, default is false
-          # Set Git user.name
-          # user_name: # optional
-          # Set Git user.email
-          # user_email: # optional
-          # Set custom commit message
-          # commit_message: # optional
+          user_name: mom0tomo
+          user_email: momo76w@gmail.com
+          commit_message: ${{ github.event.head_commit.message }}
+          cname: 'actions-gh-pages.peaceiris.com'
           # Set tag name
           # tag_name: # optional
           # Set tag message
