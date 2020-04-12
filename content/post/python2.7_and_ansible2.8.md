@@ -1,7 +1,7 @@
 ---
 title: "Python2.7_and_ansible2"
 date: 2020-04-05T22:18:27+09:00
-draft: true
+draft: false
 tags: ["Python","Ansible"]
 images: ["images/articles/avatar.png"]
 description: ""
