@@ -23,7 +23,7 @@ paginate = 104
 	bio = "Server-side Developer - Gopher"
 	twitter = "mom0tomo"
 	images = ["avatar.png"]
-	title = "mom0tomo"
+	title = "mom0tomo.github.io"
 
 	# Custom static files
 	customCSS = ["css/custom.css"]
