@@ -1,10 +1,10 @@
 ---
-title: "Python2.7_and_ansible2"
+title: "MacOS CatalinaでPython2.7.13とansible2.8をつかう"
 date: 2020-04-05T22:18:27+09:00
 draft: false
 tags: ["Python","Ansible"]
 images: ["images/articles/avatar.png"]
-description: ""
+description: "新しいPC上でEOLを迎えたPython2系との古いバージョンのAnsibleを操作する必要があったので備忘録にまとめました。"
 ---
 新しいPC上でEOLを迎えたPython2系との古いバージョンのAnsibleを操作する必要があったので備忘録にまとめました。
 
