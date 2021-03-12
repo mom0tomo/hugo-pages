@@ -1,52 +1,36 @@
-name: CI
+name: github pages
 
 on:
   push:
     branches:
       - master
-  pull_request:
-    types:
-      - opened
-      - synchronize
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  ci:
+  deploy:
     runs-on: ubuntu-18.04
     steps:
       - uses: actions/checkout@v2
         with:
-          submodules: true
+          submodules: true  # Fetch Hugo themes
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
 
-      - name: Hugo setup
-        uses: peaceiris/actions-hugo@v2.4.7
-        with: 
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
           hugo-version: 'latest'
-        # Download (if necessary) and use Hugo extended version. Example: true
-        # extended: # optional, default is false
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
-        uses: peaceiris/actions-github-pages@v3.1.12
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+          github_token: ${{ secrets.GITHUB_TOKEN }}
           external_repository: mom0tomo/mom0tomo.github.io
           publish_branch: gh-pages
           publish_dir: ./public
-          # personal_token: # optional
           # If empty commits should be made to the publication branch
           allow_empty_commit: true
           # If existing files in the publish branch should be not removed before deploying
           keep_files: false
-          # Keep only the latest commit on a GitHub Pages branch
-          # force_orphan: # optional, default is false
-          user_name: mom0tomo
-          user_email: momo76w@gmail.com
           commit_message: ${{ github.event.head_commit.message }}
-          cname: 'actions-gh-pages.peaceiris.com'
-          # Set tag name
-          # tag_name: # optional
-          # Set tag message
-          # tag_message: # optional
