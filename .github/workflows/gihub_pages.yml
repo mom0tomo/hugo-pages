@@ -29,7 +29,6 @@ jobs:
           # github_token: ${{ secrets.GITHUB_TOKEN }}
           deploy_key: ${{ secrets.ACTIONS_DEPLOY_KEY }}
           external_repository: mom0tomo/mom0tomo.github.io
-          publish_branch: gh-pages
           publish_dir: ./public
           # If empty commits should be made to the publication branch
           allow_empty_commit: true
