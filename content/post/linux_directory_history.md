@@ -1,8 +1,8 @@
 ---
 title: "Linuxのディレクトリ構造と歴史"
-date: 2021-03-12T13:42:17+09:00
+date: 2021-03-12T23:56:21+09:00
 draft: false
-tags: ["Linux"]
+tags: ["Go","Ruby", "career", "event", "English", "Rails", "JS", "React"]
 images: ["images/articles/avatar.png"]
 description: Linuxのディレクトリには構造があり、どこにどんなデータを置くか一般的なルールがある。そのルールはFHS（ファイルシステム・ヒエラルキー・スタンダード/ファイルシステム階層標準）と呼ばれ、Linuxを含むUnix系OSの主なディレクトリとその内容を定めている。ここではFHSの中でよく使うが忘れやすいもののメモを書く。
 ---
