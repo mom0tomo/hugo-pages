@@ -27,7 +27,8 @@ paginate = 104
 	lineNos = false
 	lineNumbersInTable = true
 	noClasses = true
-	style = "monokai"
+	style = "native" # https://xyproto.github.io/splash/docs/native.html
+	# style = "solarized-dark" # https://xyproto.github.io/splash/docs/solarized-dark.html
 	tabWidth = 2
 
 [params]
