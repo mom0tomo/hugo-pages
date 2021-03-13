@@ -192,4 +192,13 @@ typings/
 
 # DynamoDB Local files
 .dynamodb/
+
+### vscode ###
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
 # End of https://www.gitignore.io/api/vim,hugo,macos,werckercli,intellij+all,node
