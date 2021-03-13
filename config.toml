@@ -3,13 +3,13 @@ title = "mom0tomo"
 baseURL = "https://mom0tomo.github.io/"
 languageCode = "ja"
 theme = "hugo-theme-cactus-plus"
-canonifyURLs = true
+# Google Analytics ID
 googleAnalytics = "UA-104531981-1"
+# use CJK統合漢字
 hasCJKLanguage = true
-buildDrafts = false
+# Include content with publishdate in the future.
 buildFuture = true
-enableRSS = true
-enableTwitterCard = true
+# default = 10
 paginate = 104
 
 [social]
@@ -24,14 +24,11 @@ paginate = 104
 	twitter = "mom0tomo"
 	images = ["avatar.png"]
 	title = "mom0tomo.github.io"
-
 	# Custom static files
 	customCSS = ["css/custom.css"]
 	customJS  = []
-
-	# Google Analytics
+	# use Google Analytics
 	enableGoogleAnalytics = true
-
 	# Navigation links
 	home = "Home"
 	about = "About"
@@ -39,25 +36,23 @@ paginate = 104
 	subscribe = "Subscribe"
 	tags = "Tag"
 	rss = "rss"
-
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""
 	readMore = ""
 	copyright = ""
-
 	# Sharing options and author information in posts
 	aboutAuthor = ""
 	tweet = ""
 	share = ""
-
+	# misc
+	enableTwitterCard = true
+	enableRSS = true
 	# 404 page
 	title404 = ""
 	subtitle404 = ""
-
 	# "mono-social" or "font-awesome"
 	iconFont = "mono-social"
-
 	# The social icons can be styled differently if you use mono-social as font
 	# circle, rounded, or empty
 	socialIconStyle = "circle"
