@@ -4,6 +4,8 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
+		{{ template "_internal/opengraph.html" . }}
+		{{ template "_internal/opengraph.html" . }}
 		{{ if .Site.Params.enableTwitterCard }} 
 			{{ partial "twitter-cards.html" . }}
 		{{ end }}

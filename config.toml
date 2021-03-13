@@ -69,3 +69,6 @@ paginate = 104
 	# The social icons can be styled differently if you use mono-social as font
 	# circle, rounded, or empty
 	socialIconStyle = "circle"
+
+[taxonomies]
+  series = "series"
