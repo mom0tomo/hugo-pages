@@ -17,6 +17,19 @@ paginate = 104
 	twitter = "https://twitter.com/mom0tomo"
 	github = "https://github.com/mom0tomo"
 
+# Hugo Configure Markup
+# see: https://gohugo.io/getting-started/configuration-markup#highlight
+[markup]
+  [markup.highlight]
+  guessSyntax = true
+	codeFences = true
+	lineNoStart = 1
+	lineNos = false
+	lineNumbersInTable = true
+	noClasses = true
+	style = "monokai"
+	tabWidth = 2
+
 [params]
 	name = "mom0tomo"
 	description = "Thoughts and links about programming, by mom0tomo. I Love Go, Travel, Beer, Programming!"
