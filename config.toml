@@ -14,11 +14,6 @@ paginate = 104
 ## Enable Emoji emoticons support for page content.(like :tada:)
 enableEmoji = true
 
-[social]
-	facebook = "https://www.facebook.com/mom0tomo"
-	twitter = "https://twitter.com/mom0tomo"
-	github = "https://github.com/mom0tomo"
-
 ## Hugo Configure Markup
 ## see: https://gohugo.io/getting-started/configuration-markup#highlight
 [markup]
@@ -72,6 +67,11 @@ enableEmoji = true
 	# The social icons can be styled differently if you use mono-social as font
 	# circle, rounded, or empty
 	socialIconStyle = "circle"
+	# Add additional social link entries underneath
+	[social]
+		facebook = "https://www.facebook.com/mom0tomo"
+		twitter = "https://twitter.com/mom0tomo"
+		github = "https://github.com/mom0tomo"
 
 [taxonomies]
   series = "series"
