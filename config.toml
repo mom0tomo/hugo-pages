@@ -44,7 +44,6 @@ enableEmoji = true
 	home = "Home"
 	about = "About"
 	archive = "Archives"
-	subscribe = "Subscribe"
 	tags = "Tag"
 	rss = "rss"
 	# Pagination links
@@ -56,8 +55,7 @@ enableEmoji = true
 	aboutAuthor = ""
 	tweet = ""
 	share = ""
-	# misc
-	enableTwitterCard = true
+	# rss
 	enableRSS = true
 	# 404 page
 	title404 = ""
