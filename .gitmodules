@@ -1,6 +1,0 @@
-[submodule "themes/hugo-theme-cactus-plus"]
-  path = themes/hugo-theme-cactus-plus
-  url = https://github.com/nodejh/hugo-theme-cactus-plus
-[submodule "themes/mini"]
-	path = themes/mini
-	url = https://github.com/nodejh/hugo-theme-mini.git
