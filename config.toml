@@ -38,8 +38,6 @@ enableEmoji = true
 	# Custom static files
 	customCSS = ["css/custom.css"]
 	customJS  = []
-	# use Google Analytics
-	enableGoogleAnalytics = true
 	# Navigation links
 	home = "Home"
 	about = "About"
