@@ -1,24 +1,26 @@
-# Site settings
+# Base settings
 title = "mom0tomo"
 baseURL = "https://mom0tomo.github.io/"
 languageCode = "ja"
 theme = "hugo-theme-cactus-plus"
-# Google Analytics ID
+## Google Analytics ID
 googleAnalytics = "UA-104531981-1"
-# use CJK統合漢字
+## use CJK統合漢字
 hasCJKLanguage = true
-# Include content with publishdate in the future.
+## Include content with publishdate in the future.
 buildFuture = true
-# default = 10
+## default = 10
 paginate = 104
+## Enable Emoji emoticons support for page content.(like :tada:)
+enableEmoji = true
 
 [social]
 	facebook = "https://www.facebook.com/mom0tomo"
 	twitter = "https://twitter.com/mom0tomo"
 	github = "https://github.com/mom0tomo"
 
-# Hugo Configure Markup
-# see: https://gohugo.io/getting-started/configuration-markup#highlight
+## Hugo Configure Markup
+## see: https://gohugo.io/getting-started/configuration-markup#highlight
 [markup]
   [markup.highlight]
   guessSyntax = true
