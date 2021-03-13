@@ -40,12 +40,6 @@ enableEmoji = true
 	# Custom static files
 	customCSS = ["css/custom.css"]
 	customJS  = []
-	# Navigation links
-	home = "Home"
-	about = "About"
-	archive = "Archives"
-	tags = "Tag"
-	rss = "rss"
 	# Pagination links
 	olderPosts = ""
 	newerPosts = ""
@@ -70,6 +64,11 @@ enableEmoji = true
 		facebook = "https://www.facebook.com/mom0tomo"
 		twitter = "https://twitter.com/mom0tomo"
 		github = "https://github.com/mom0tomo"
+	# Navigation links
+	[params.links]
+		about = "about"
+		archive = "archive"
+		tags = "tags"
 
 # Configure Open Graph
 [taxonomies]
