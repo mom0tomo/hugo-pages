@@ -32,6 +32,11 @@ Personal, [github.com/mom0tomo](https://github.com/mom0tomo/).
 <br>
 More in [speakerdeck.com](https://speakerdeck.com/mom0tomo).
 
+**
+
+### Bookshelf
+[読書メーター](https://bookmeter.com/users/841516)
+
 ***
 
 ### Travel logs
