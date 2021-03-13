@@ -73,4 +73,4 @@ enableEmoji = true
 
 # Configure Open Graph
 [taxonomies]
-  series = "series"
+  tags = "tags"
