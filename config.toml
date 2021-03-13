@@ -28,11 +28,13 @@ enableEmoji = true
 	# style = "solarized-dark" # https://xyproto.github.io/splash/docs/solarized-dark.html
 	tabWidth = 2
 
+# User custom settings
 [params]
 	name = "mom0tomo"
-	description = "Thoughts and links about programming, by mom0tomo. I Love Go, Travel, Beer, Programming!"
 	bio = "Server-side Developer - Gopher"
 	twitter = "mom0tomo"
+	# Configure Open Graph
+	description = "Thoughts and links about programming, by mom0tomo. I Love Go, Travel, Beer, Programming!"
 	images = ["avatar.png"]
 	title = "mom0tomo.github.io"
 	# Custom static files
@@ -69,5 +71,6 @@ enableEmoji = true
 		twitter = "https://twitter.com/mom0tomo"
 		github = "https://github.com/mom0tomo"
 
+# Configure Open Graph
 [taxonomies]
   series = "series"
