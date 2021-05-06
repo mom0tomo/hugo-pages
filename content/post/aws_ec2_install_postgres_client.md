@@ -4,8 +4,7 @@ date: 2021-05-05T22:59:40+09:00
 draft: false
 tags: ["AWS"]
 images: ["images/articles/avatar.png"]
-description: EC2(Amazon Linux)上に建てた踏み台サーバーをクライアントとして、RDS(PostgreSQL)に接続したいというのが今回の主旨です。
-この場合、EC2にpostgresをインストールするのではなく、postgresクライアントモジュールをインストールするだけで十分です。この記事では、postgresクライアントモジュールのみをインストール手順を記載します。
+description: EC2(Amazon Linux)上に建てた踏み台サーバーをクライアントとして、RDS(PostgreSQL)に接続したい。EC2をPostgreSQL DBとしてて使うのではなく、RDSに接続するクライアントとして使う場合には、クライアントモジュールをインストールするだけで十分です。
 ---
 # 概要
 EC2(Amazon Linux)上に建てた踏み台サーバーをクライアントとして、RDS(PostgreSQL)に接続したいというのが今回の主旨です。
