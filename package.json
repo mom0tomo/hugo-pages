@@ -1,11 +1,11 @@
 {
   "name": "hugo-pages",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hugoでつくるブログサイト[mom0tomo.github.io](https://mom0tomo.github.io)の本体。<br> デプロイ先: https://github.com/mom0tomo/mom0tomo.github.io",
   "main": "index.js",
   "devDependencies": {
-    "textlint": "^11.6.3",
-    "textlint-rule-preset-ja-technical-writing": "^3.1.3"
+    "textlint": "latest",
+    "textlint-rule-preset-ja-technical-writing": "latest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
