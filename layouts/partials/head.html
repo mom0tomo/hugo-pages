@@ -1,45 +1,47 @@
 <!DOCTYPE html>
-<html {{ with .Site.LanguageCode }}lang="{{ . }}"{{ end }}>
-	<head>
-		<meta charset="utf-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		{{ template "_internal/opengraph.html" . }}
-		{{ template "_internal/twitter_cards.html" . }}
-		{{ template "_internal/google_analytics.html" . }}
-		{{ with .Site.Params.author }}<meta name="author" content="{{ . }}">{{ end }}
-		<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
-		{{ hugo.Generator }}
-		<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
-		<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
+<html {{ with .Site.LanguageCode }}lang="{{ . }}" {{ end }}>
 
-		{{ if eq .Site.Params.iconFont "font-awesome" }}
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
-		{{ else }}
-		<link rel="stylesheet" href="{{ .Site.BaseURL }}css/monosocialiconsfont.css">
-		{{ end }}
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	{{ template "_internal/opengraph.html" . }}
+	{{ template "_internal/twitter_cards.html" . }}
+	{{ template "_internal/google_analytics.html" . }}
+	{{ with .Site.Params.author }}
+	<meta name="author" content="{{ . }}">{{ end }}
+	<meta name="description" content="{{if .IsHome}}{{ $.Site.Params.description }}{{else}}{{.Description}}{{end}}">
+	{{ hugo.Generator }}
+	<title>{{ if .IsHome }}{{ .Title }}{{ else }}{{ .Title }} &middot; {{ .Site.Title }}{{ end }}</title>
+	<link rel="shortcut icon" href="{{ .Site.BaseURL }}images/favicon.ico">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/style.css">
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/highlight.css">
 
-		{{ if .Site.Params.enableRSS }}
-		<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
-		{{ end }}
+	{{ if eq .Site.Params.iconFont "font-awesome" }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/font-awesome.min.css">
+	{{ else }}
+	<link rel="stylesheet" href="{{ .Site.BaseURL }}css/monosocialiconsfont.css">
+	{{ end }}
 
-		{{ range .Site.Params.customCSS }}
-		<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
-		{{ end }}
+	{{ if .Site.Params.enableRSS }}
+	<link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+	{{ end }}
 
-		<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
-		<script type="text/javascript">
-			Hatena.Star.Token = '439b2988ff9e3560541978cfebab857d59ac4047';
-			Hatena.Star.SiteConfig = {
-				entryNodes: {
-					'section#wrapper': {
-						uri: 'div.posted a',
-						title: 'h1',
-						container: 'span.hatena-star'
-					}
+	{{ range .Site.Params.customCSS }}
+	<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
+	{{ end }}
+
+	<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
+	<script type="text/javascript">
+		Hatena.Star.Token = '439b2988ff9e3560541978cfebab857d59ac4047';
+		Hatena.Star.SiteConfig = {
+			entryNodes: {
+				'section#wrapper': {
+					uri: 'div.posted a',
+					title: 'h1',
+					container: 'span.hatena-star'
 				}
 			}
-		</script>
-	</head>
+		}
+	</script>
+</head>
