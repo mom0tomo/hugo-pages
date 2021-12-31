@@ -30,18 +30,4 @@
 	{{ range .Site.Params.customCSS }}
 	<link rel="stylesheet" href="{{ $.Site.BaseURL }}{{ . }}">
 	{{ end }}
-
-	<script type="text/javascript" src="http://s.hatena.ne.jp/js/HatenaStar.js"></script>
-	<script type="text/javascript">
-		Hatena.Star.Token = '439b2988ff9e3560541978cfebab857d59ac4047';
-		Hatena.Star.SiteConfig = {
-			entryNodes: {
-				'section#wrapper': {
-					uri: 'div.posted a',
-					title: 'h1',
-					container: 'span.hatena-star'
-				}
-			}
-		}
-	</script>
 </head>
