@@ -1,19 +1,21 @@
 <ul id="post-list">
     {{ range where .Paginator.Pages "Params.hidden" "ne" "true" }}
     {{ $url := replace .Permalink .Site.BaseURL "" }}
-        {{ if ne $url "about/" }}
-            <li>
-                <a href='{{ .Permalink }}'><aside class="dates">{{ .Date.Format "Jan 2" }}</aside></a>
-                <a href='{{ .Permalink }}'>
-                    {{ .Title }} <h2>{{ .Summary }}</h2>
-                </a>
-               {{ if .Truncated }}
-      			<!-- This <div> includes a read more link, but only if the summary is truncated... -->
-      			<div class="read-more">
-        			<a href="{{ .RelPermalink }}">Read More…</a>
-      			</div>
-      			{{ end }}
-			</li>
+    {{ if ne $url "about/" }}
+    <li>
+        <a href='{{ .Permalink }}'>
+            <aside class="dates">{{ .Date.Format "Jan 2" }}</aside>
+        </a>
+        <a href='{{ .Permalink }}'>
+            {{ .Title }} <h2>{{ .Summary }}</h2>
+        </a>
+        {{ if .Truncated }}
+        <!-- This <div> includes a read more link, but only if the summary is truncated... -->
+        <div class="read-more">
+            <a href="{{ .RelPermalink }}">Read More…</a>
+        </div>
         {{ end }}
+    </li>
+    {{ end }}
     {{ end }}
 </ul>
