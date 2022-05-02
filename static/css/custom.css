@@ -45,3 +45,8 @@ ul > li {
 figure.glass{
   width: 50px !important;
 }
+
+#post-body h2 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
