@@ -1,18 +1,12 @@
 <nav id="post-nav">
-    {{ if or (.Paginator.HasPrev) (.Paginator.HasNext) }}
-    {{ if .Paginator.HasPrev }}
+    {{ with .PrevInSection }}
     <span class="prev">
-        <a href="{{.Paginator.Prev.URL}}">
-            {{ with .Site.Params.newerPosts }}{{ . }}{{ else }}Newer Posts{{ end }}
-        </a>
+        <a href="{{ .Permalink }}">← {{ .LinkTitle }}</a>
     </span>
     {{ end }}
-    {{ if .Paginator.HasNext }}
+    {{ with .NextInSection }}
     <span class="next">
-        <a href="{{.Paginator.Next.URL}}">
-            {{ with .Site.Params.olderPosts }}{{ . }}{{ else }}Older Posts{{ end }}
-        </a>
+        <a href="{{ .Permalink }}">{{ .LinkTitle }} →</a>
     </span>
-    {{ end }}
     {{ end }}
 </nav>
