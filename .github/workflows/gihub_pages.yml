@@ -7,9 +7,11 @@ on:
 
 jobs:
   deploy:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
+    concurrency:
+      group: ${{ github.workflow }}-${{ github.ref }}
     steps:
-      - uses: actions/checkout@v2
+      - uses: actions/checkout@v3
         with:
           submodules: true  # Fetch Hugo themes
           fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
@@ -17,13 +19,14 @@ jobs:
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
         with:
-          hugo-version: 'latest'
+          hugo-version: latest
 
       - name: Build
         run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
+        if: ${{ github.ref == 'refs/heads/main' }}
         with:
           # Action failed with "The generated GITHUB_TOKEN (github_token) does not support to push to an external repository. Use deploy_key or personal_token.
           # github_token: ${{ secrets.GITHUB_TOKEN }}
@@ -32,6 +35,4 @@ jobs:
           publish_dir: ./public
           # If empty commits should be made to the publication branch
           allow_empty_commit: true
-          # If existing files in the publish branch should be not removed before deploying
-          keep_files: false
           commit_message: ${{ github.event.head_commit.message }}
