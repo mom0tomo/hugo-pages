@@ -3,8 +3,6 @@ title = "mom0tomo"
 baseURL = "https://mom0tomo.github.io/"
 languageCode = "ja"
 theme = "hugo-theme-cactus-plus"
-## Google Analytics ID
-googleAnalytics = "G-YFDBYV8Y07"
 ## use CJK統合漢字
 hasCJKLanguage = true
 ## Include content with publishdate in the future.
