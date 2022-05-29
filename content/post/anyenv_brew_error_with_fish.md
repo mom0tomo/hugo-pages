@@ -32,6 +32,8 @@ fish: The function 'brew' calls itself immediately, which would result in an inf
 PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew
                                                                   ^
 ```
+
+## 調べたこと
 この理由は、fishでは `alias` コマンドは関数のシンプルなラッパーであるため、コマンドと同じ名前のエイリアスを設定しようとすると、関数内で関数（自分自身）を呼び出す動作をするためです。
 
 [alias - create a function — fish-shell 3.4.1 documentation](https://fishshell.com/docs/current/cmds/alias.html)
@@ -40,8 +42,28 @@ PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin brew
 [github.com issue | aliases don't work, fish complains of recursive function call · Issue #224 · fish-shell/fish-](https://github.com/fish-shell/fish-shell/issues/224)
 
 
+つまりこうなっています。（このような関数はそのままfish shell上で実行して試すことができます）
+```:shell
+function hoge_command
+  hoge_command &argv
+end
+```
+
 fishでコマンドと同じ名前のエイリアスを設定したい場合は、 `command` をつけることで無限ループ問題が解決できます。 実行したいコマンド（今回はbrew）の前に `command` をつけることにより、関数ではなくコマンド（External command）を実行します。
 
 [command - run a program — fish-shell 3.4.1 documentation](https://fishshell.com/docs/current/cmds/command.html#cmd-command)
 
-今回の場合PATHの設定も必要なので、PATHを設定した後に `command` をつけてbrewを実行するようにしました。
+つまりこのように書けばよいということでした。
+```:shell
+function hoge_command
+  command hoge_command &argv
+end
+```
+
+***
+
+今回の場合PATHの設定も必要なので、PATHを設定した後に `command` をつけてbrewを実行するようにしました。また、短い処理なのでエイリアスとしてワンライナーにしました。
+
+```:shell
+alias brew="PATH=/usr/local/bin:/usr/bin:/bin:/usr/local/sbin:/usr/sbin:/sbin command brew $argv"
+```
