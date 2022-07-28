@@ -1,0 +1,47 @@
+# ref: https://pankona.github.io/blog/2021/03/04/long-time-no-see-blog-post/
+name: notify_long_time_no_see
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: 0 22 * * *
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    steps:
+      - name: setup go
+        uses: actions/setup-go@v2
+        with:
+          go-version: ^1.16
+      - name: Git clone
+        uses: actions/checkout@v2
+        with:
+          repository: ${ process.env.GITHUB_ACCOUNT_NAME }/${ process.env.GITHUB_REPOSITORY_NAME }
+          path: ${ process.env.GITHUB_REPOSITORY_NAME }
+          submodules: recursive
+        env:
+          GITHUB_ACCOUNT_NAME: mom0tomo
+          GITHUB_REPOSITORY_NAME: hugo-pages
+      - name: Install tools
+        run: |
+          cd ./${ process.env.GITHUB_REPOSITORY_NAME }/tools/sincelastcommit
+          go install .
+        env:
+          GITHUB_REPOSITORY_NAME: hugo-pages
+      - name: Run
+        run: |
+          cd ./${ process.env.GITHUB_REPOSITORY_NAME }/content/post
+          echo "SINCE_LAST_COMMIT=`sincelastcommit`" >> $GITHUB_ENV
+        env:
+          GITHUB_REPOSITORY_NAME: hugo-pages
+      - name: Notify Slack
+        if: env.SINCE_LAST_COMMIT >= 14
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_CHANNEL: github通知
+          SLACK_MESSAGE: "最後のブログ更新から ${{ env.SINCE_LAST_COMMIT }} 日経ちました"
+          SLACK_USERNAME: mom0tomo
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
