@@ -11,32 +11,36 @@ jobs:
     runs-on: ubuntu-latest
     env:
       TOKEN: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+
+    defaults:
+      run:
+        shell: bash
+        working-directory: tools/sincelastcommit
+
     steps:
       - name: setup go
         uses: actions/setup-go@v2
         with:
           go-version: ^1.16
+
       - name: Git clone
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
-          repository: ${ process.env.GITHUB_ACCOUNT_NAME }/${ process.env.GITHUB_REPOSITORY_NAME }
-          path: ${ process.env.GITHUB_REPOSITORY_NAME }
-          submodules: recursive
-        env:
-          GITHUB_ACCOUNT_NAME: mom0tomo
-          GITHUB_REPOSITORY_NAME: hugo-pages
+          fetch-depth: 1
+
       - name: Install tools
         run: |
-          cd ./${ process.env.GITHUB_REPOSITORY_NAME }/tools/sincelastcommit
           go install .
         env:
           GITHUB_REPOSITORY_NAME: hugo-pages
+
       - name: Run
         run: |
-          cd ./${ process.env.GITHUB_REPOSITORY_NAME }/content/post
+          cd ../../content/post
           echo "SINCE_LAST_COMMIT=`sincelastcommit`" >> $GITHUB_ENV
         env:
           GITHUB_REPOSITORY_NAME: hugo-pages
+
       - name: Notify Slack
         if: env.SINCE_LAST_COMMIT >= 14
         uses: rtCamp/action-slack-notify@v2
