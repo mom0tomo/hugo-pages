@@ -1,4 +1,4 @@
-module github.com/mom0tomo/hugo-pages/tools
+module github.com/mom0tomo/hugo-pages/tools/sincelastcommit
 
 go 1.18
 
