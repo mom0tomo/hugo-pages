@@ -15,7 +15,6 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./tools/sincelastcommit
 
     steps:
       - name: Git clone
@@ -26,17 +25,18 @@ jobs:
       - name: Setup Go
         uses: actions/setup-go@v3
         with:
-          go-version-file: go.mod
+          go-version-file: tools/sincelastcommit/go.mod
 
       - name: Install tools
         run: |
+          cd tools/sincelastcommit
           go install .
         env:
           GITHUB_REPOSITORY_NAME: hugo-pages
 
       - name: Run
         run: |
-          cd ../../content/post
+          cd content/post
           echo "SINCE_LAST_COMMIT=`sincelastcommit`" >> $GITHUB_ENV
         env:
           GITHUB_REPOSITORY_NAME: hugo-pages
