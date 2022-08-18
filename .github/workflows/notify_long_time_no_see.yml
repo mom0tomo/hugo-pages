@@ -31,16 +31,13 @@ jobs:
         run: |
           cd tools/sincelastcommit
           go install .
-        env:
-          GITHUB_REPOSITORY_NAME: hugo-pages
 
       - name: Run
         run: |
-          pwd
           cd content/post
+          pwd
+          ls -la
           echo "SINCE_LAST_COMMIT=`sincelastcommit`" >> $GITHUB_ENV
-        env:
-          GITHUB_REPOSITORY_NAME: hugo-pages
 
       - name: Notify Slack
         if: env.SINCE_LAST_COMMIT >= 14
