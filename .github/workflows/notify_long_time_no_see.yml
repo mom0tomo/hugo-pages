@@ -18,15 +18,15 @@ jobs:
         working-directory: tools/sincelastcommit
 
     steps:
-      - name: Setup Go
-        uses: actions/setup-go@v3
-        with:
-          go-version-file: go.mod
-
       - name: Git clone
         uses: actions/checkout@v3
         with:
           fetch-depth: 1
+
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: go.mod
 
       - name: Install tools
         run: |
