@@ -23,15 +23,13 @@ jobs:
           repository: mom0tomo/hugo-pages
           submodules: 'recursive'
 
-#       - name: Setup Go
-#         uses: actions/setup-go@v3
-#         with:
-#           go-version-file: tools/sincelastcommit/go.mod
+      - name: Setup Go
+        uses: actions/setup-go@v3
+        with:
+          go-version-file: tools/sincelastcommit/go.mod
 
       - name: Install tools
         run: |
-          pwd
-          ls -la
           cd tools/sincelastcommit
           go install .
 
