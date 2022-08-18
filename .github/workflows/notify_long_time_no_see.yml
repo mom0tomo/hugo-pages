@@ -36,7 +36,7 @@ jobs:
 
       - name: Run
         run: |
-          cd content/post
+          cd ../../content/post
           echo "SINCE_LAST_COMMIT=`sincelastcommit`" >> $GITHUB_ENV
         env:
           GITHUB_REPOSITORY_NAME: hugo-pages
