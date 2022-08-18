@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: tools/sincelastcommit
+        working-directory: ./tools/sincelastcommit
 
     steps:
       - name: Git clone
