@@ -57,7 +57,7 @@ jobs:
   deploy:
     environment:
       name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
+      url: https://mom0tomo.github.io/
     runs-on: ubuntu-latest
     needs: build
     steps:
